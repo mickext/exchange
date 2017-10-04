@@ -40,7 +40,7 @@ source 'https://rails-assets.org' do
 end
 
 gem 'popper_js', '~> 1.11.1'
-gem 'bootstrap', '~> 4.0.0.alpha3'
+gem 'bootstrap', '~> 4.0.0.beta'
 
 gem 'rest-client'
 
