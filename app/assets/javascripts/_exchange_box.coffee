@@ -6,6 +6,9 @@ $(document).ready ->
     $("#currency").val(currency_destination)
     $("#currency_destination").val(currency)
 
+  $('form').submit ->
+    if $('form').attr('action') == '/exchange'
+      do exchange
 
   $("#quantity").keyup ->
     do exchange
@@ -24,3 +27,5 @@ $(document).ready ->
         success: (data, text, jqXHR) ->
           $('#result').val(data.value)
       return false;
+
+   
