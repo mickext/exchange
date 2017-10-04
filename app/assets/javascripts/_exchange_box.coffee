@@ -5,6 +5,7 @@ $(document).ready ->
     
     $("#currency").val(currency_destination)
     $("#currency_destination").val(currency)
+    do exchange
 
   $('form').submit ->
     if $('form').attr('action') == '/exchange'
